@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            border-style: solid;
+            border-width: 3px;
+            border-color: red;
+            border-bottom-color: blue;
+
+            margin-top: 50px; /*위에서 아래로 50픽셀 이동*/
+            margin-left: 30px; /*왼 -> 오로 30픽셀 이동*/
+            width: 300px; /*컨텐츠의 크기*/
+
+            padding-left: 50px;
+        }
+
+        .box2 {
+            width: 300px;
+            border: 1px solid black;
+            margin: 25px auto; /*25px - 상하, auto - 좌우*/
+        }
+
+        .box3{
+            width: 300px;
+            border: 1px solid black;
+            /* margin-right: auto; - 얘가 기본 값이었다.*/
+            margin-left: auto; /* 우측 정렬, 오른쪽의 마진 영역을 왼쪽으로 모두 보낸다. */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <!-- div는 단순히 요소를 나눠주는 애 -->
+</body>
+</html>
