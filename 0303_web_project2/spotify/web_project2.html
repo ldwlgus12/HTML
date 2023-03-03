@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7c2def04d0.js" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .top {
+            display: flex;
+        }
+
+        .footer {
+            border-top: 1px solid black;
+            height: 50px;
+            text-align: center;
+        }
+
+        .Sidebar {
+            min-width: 180px;
+            max-width: 260px;
+            border-right: 1px solid black;
+        }
+
+        .Content-Area {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo-image {
+            width: 80%;
+            
+        }
+
+        .menu {
+            margin-left: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            border-left: 20px;
+            height: 50px;
+            border-bottom: 1px solid black;
+            line-height: 50px;
+        }
+
+        .empty {
+            flex-grow: 0.5;
+        }
+
+        .empty-1 {
+            flex-grow: 12;
+        }
+
+        .signup {
+            text-decoration: none;
+        }
+
+        .login {
+            border: 1px solid black;
+            border-radius: 50px;
+            height: 40px;
+            width: 120px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .song {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            border: 7px solid rgb(85, 85, 85);
+            background-color: rgb(85, 85, 85);
+            border-radius: 10px;
+            margin: 20px;
+            color: white;  
+            font-size: 16px;  
+        }
+
+        .cover {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .singer {
+            font-size: 11px;
+            color: lightgray;
+        }
+
+        .hyper {
+            height: 50%;
+            margin-top: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="Sidebar">
+                <div class="logo">
+                    <a href="https://open.spotify.com/"><img class="logo-image" src="spotify-logo.png" alt="스포티파이로고"></a>
+                </div>
+                <div class="menu">
+                    <p><i class="fa-solid fa-house"></i> 홈</p>
+                    <p><i class="fa-solid fa-magnifying-glass"></i> 검색하기</p>
+                    <p><i class="fa-regular fa-bookmark"></i> 내 라이브러리</p>
+                </div>
+            </div>
+                
+            <main class="Content-Area">
+                <nav class="navbar">
+                    <div class="empty"></div>
+                    <div><</div>
+
+                    <div class="empty"></div>
+                    <div>></div>
+
+                    <div class="empty-1"></div>
+
+                    <div><a class="signup" href="https://www.spotify.com/kr-ko/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">가입하기</a></div>
+                    <div class="empty"></div>
+
+                    <a class="login" href="https://accounts.spotify.com/ko/login?continue=https%3A%2F%2Fopen.spotify.com%2F"><div>로그인하기</div>
+                    <div class="empty"></div></a>
+                </nav>
+
+                <div class="content">
+                    <div class="song">
+                        <img class="cover" src="cat.jpg" alt="">Cat
+                        <p class="singer">Cute</p>
+                    </div>
+
+                    <div class="song">
+                        <img class="cover" src="newjeans.jpg" alt="newjeans">Ditto
+                        <p class="singer">NewJeans</p>
+                    </div>
+
+                    <div class="song">
+                        <img class="cover" src="stayc.jpg" alt="stayc">Teddy Bear
+                        <p class="singer">STAYC</p>
+                    </div>
+
+                    <div class="song">
+                        <img class="cover" src="lesserafim.jpg" alt="lesserafim"> ANTIFRAGILE
+                        <p class="singer">LE SSERAFIM (르세라핌)</p>
+                    </div>
+
+                    <div class="song">
+                        <img class="cover" src="ive.jpg" alt="idle">After LIKE
+                        <p class="singer">IVE (아이브)</p>
+                    </div>
+
+                    <div class="song">
+                        <img class="cover" src="txt.jpg" alt="txt">Sugar Rush Ride
+                        <p class="singer">투모로우바이투게더</p>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+        <div class="footer">
+            <p>팀원: 김민지, 전지현</p>
+            <p>만든 날짜: 2023 / 03 / 03</p>
+        </div>
+    </div>
+
+</body>
+</html>
