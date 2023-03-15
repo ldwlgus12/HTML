@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits =['apple', 'banana', 'coconut']
+
+        //forEach는 인자로 함수를 받음
+        // 반복문
+        // *** call back 함수 - 왕중요 ***
+        fruits.forEach(function (fruit, idx) {
+            console.log(fruit, idx)
+        })
+
+        fruits.forEach((fruit, idx) => {
+            console.log(fruit, idx)
+        })
+
+
+        // map
+        const numbers = [1,2,3]
+
+        const doubleNumbers1 = numbers.map(function (number) {
+            return number * 2
+        })
+
+        const doubleNumbers2 = numbers.map((number) => {
+            return number * 2
+        })
+
+        console.log(doubleNumbers1)  // [2, 4, 6]
+
+
+        // 비동기적 처리 측면
+        console.log('a')
+
+        setTimeout(() => {
+            console.log('b')
+        }, 3000)
+
+        console.log('c')  // a c b
+
+    </script>
+</body>
+</html>
